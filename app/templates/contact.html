@@ -3,14 +3,7 @@
 </head>
 
 <body>
-    <div class="navbar" id="topNav">
-    <a href="home" class="active">blackScholes</a>
-    <a href="history">History</a>
-    <a href="derivations">Derivations and Usage</a>
-    <a href="calculator">Calculate Expected Option Price</a>
-    <a href="calculator2">Calculate Implied Volatility</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="dropDown()">☰</a>
-  </div>
+  <!--nav bar goes here-->
 
   <div class="frame">
     <div id="other_main">
@@ -40,13 +33,4 @@
       <li>Stock price follows normal distribution</li>
     </div>
   </div>
-  <script>
-function dropDown() {
-  var x = document.getElementById("topNav");
-  if (x.className === "navbar") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}</script>
 </body>

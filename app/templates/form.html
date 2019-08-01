@@ -3,35 +3,42 @@
         <link href="{{ url_for('static', filename='styles.css') }}" type="text/css" rel="stylesheet"/>
     </head>
     <body>
-        <div class="navbar">
-            <a href="home">blackScholes</a>
-            <a href="history">History</a>
-            <a href="derivations">Derivations and Usage</a>
-            <a href="calculator">Calculate Expected Option Price</a>
-            <a href="calculator2">Calculate Implied Volatility</a>
-        </div>
+          <div class="navbar" id="topNav">
+    <a href="home" class="active">blackScholes</a>
+    <a href="history">History</a>
+    <a href="derivations">Derivations and Usage</a>
+    <a href="calculator">Calculate Expected Option Price</a>
+    <a href="calculator2">Calculate Implied Volatility</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="dropDown()">☰</a>
+  </div>
 <div class="frame">
  <div class="main">
         <br>
-        <br>
         <h1>Calculate Expected Option Price</h1>
-         <br>
-          <br>
         <div class="form_div">
         <form method="post" action="/list">
             <label for="stockCost">Underlying Stock Cost:</label>
-            <input type="text" name="stockCost" value="">
+            <input type="number" name="stockCost" value="" step="any" required>
             <label for="exercisePrice">Option Exercise Price:</label>
-            <input type="text" name="exercisePrice" value="">
+            <input type="number" name="exercisePrice" value="" step="any" required>
             <label for="riskFreeInterestRate">Risk Free Interest Rate:</label>
-            <input type="text" name="riskFreeInterestRate" value="">
+            <input type="number" name="riskFreeInterestRate" value="" step="any" required>
             <label for="timeUntilExp">Time Until Expiration:</label>
-            <input type="text" name="timeUntilExp" value="">
+            <input type="number" name="timeUntilExp" value="" step="any" required>
             <label for="volatility">Volatility: </label>
-            <input type="text" name="volatility" value="">
+            <input type="number" name="volatility" value="" step="any" required>
             <input type="submit" value="Submit">
         </form>
         </div>
+        <script>
+function dropDown() {
+  var x = document.getElementById("topNav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}</script>
     </body>  
     </div>
     </div>

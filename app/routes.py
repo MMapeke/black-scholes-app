@@ -67,3 +67,7 @@ def history():
 @app.route('/derivations')
 def derivations():
     return render_template("derivations.html")
+    
+@app.route('/contact')
+def contactUs():
+    return render_template("contact.html")
