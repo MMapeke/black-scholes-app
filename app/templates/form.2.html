@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link href="{{ url_for('static', filename='styles.css') }}" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="home">blackScholes</a>
+            <a href="history">History</a>
+            <a href="derivations">Derivations</a>
+            <a href="calculator">Calculate Expected Option Price</a>
+            <a href="calculator2">Calculate Implied Volatility</a>
+        </div>
+<div class="frame">
+  
+<div class="main">
+        <br>
+        <br>
+    <h1>Calculate Implied Volatility</h1>
+         <br>
+      <br>
+        <div class="form_div">
+        <form method="post" action="/list2">
+            <label for="stockCost">Underlying Stock Cost:</label>
+            <input type="text" name="stockCost" value="" >
+            <label for="exercisePrice">Option Exercise Price:</label>
+            <input type="text" name="exercisePrice" value="">
+            <label for="riskFreeInterestRate">Risk Free Interest Rate:</label>
+            <input type="text" name="riskFreeInterestRate" value="">
+            <label for="timeUntilExp">Time Until Expiration:</label>
+            <input type="text" name="timeUntilExp" value="">
+            <label for="optionPrice">Option Price: </label>
+            <input type="text" name="optionPrice" value ="">
+            <input type="submit" value="Submit">
+        </form></div>
+    </div>
+    </div>
+    </body>    
+</html>

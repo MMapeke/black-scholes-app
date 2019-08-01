@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <link href="{{ url_for('static', filename='styles.css') }}" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="home">blackScholes</a>
+        <a href="history">History</a>
+        <a href="derivations">Derivations and Usage</a>
+        <a href="calculator">Calculate Expected Option Price</a>
+        <a href="calculator2">Calculate Implied Volatility</a>
+    </div>
+    <div class="frame">
+        <div class="main">
+            <br>
+            <br>
+            <br>
+            <h1>Results</h1>
+            <h2> Your expected option price is ${{ C }}.</h2>
+
+            <table style="width:75%">
+                <thead>
+                    <tr>
+                        <th>Name of Variable</th>
+                        <th>Value Inputed</th>
+                    </tr>
+                </thead>
+
+                <tbody >
+                    <tr>
+                        <td>Cost of Stock</td>
+                        <td>{{ So }}</td>
+                    </tr>
+                    <tr>
+                        <td>Exercise Price</td>
+                        <td>{{ Xo }}</td>
+                    </tr>
+                    <tr>
+                        <td>Time Until Expiration</td>
+                        <td>{{ To }}</td>
+                    </tr>
+                     <tr>
+                        <td>Risk Free Interest Rate</td>
+                        <td>{{ ro }}</td>
+                    </tr>
+                    <tr>
+                        <td>Volatility</td>
+                        <td>{{ oo }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
