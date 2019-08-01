@@ -33,6 +33,10 @@ def list():
         return render_template('blackScholes.html',So=So, Xo = Xo, To = To, ro = ro, oo = oo, C=model.blackScholes(
             So, Xo, To, ro, oo))
             
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+            
 @app.route("/list2", methods=["GET", "POST"])
 def list_2():
     if request.method=="GET":

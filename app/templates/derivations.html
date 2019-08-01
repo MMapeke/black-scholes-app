@@ -3,12 +3,13 @@
         <link href="{{ url_for('static', filename='styles.css') }}" type="text/css" rel="stylesheet"/>
     </head>
     <body>
-  <div class="navbar" id="topNav">
+  <div class="navbar topnav" id="myTopNav">
     <a href="home" class="active">blackScholes</a>
     <a href="history">History</a>
     <a href="derivations">Derivations and Usage</a>
     <a href="calculator">Calculate Expected Option Price</a>
     <a href="calculator2">Calculate Implied Volatility</a>
+    <a href="contact">Contact Us</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="dropDown()">☰</a>
   </div>
 
@@ -22,11 +23,12 @@
 </div>
 <script>
 function dropDown() {
-  var x = document.getElementById("topNav");
-  if (x.className === "navbar") {
+  var x = document.getElementById("myTopNav");
+  if (x.className === "navbar topnav") {
     x.className += " responsive";
-  } else {
-    x.className = "topnav";
+  } 
+  else {
+     x.className="navbar topnav";
   }
-}</script>
+  }</script>
 </body>

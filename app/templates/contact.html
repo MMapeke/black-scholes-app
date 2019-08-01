@@ -4,33 +4,33 @@
 
 <body>
   <!--nav bar goes here-->
-
+  <div class="navbar topnav" id="myTopNav">
+    <a href="home" class="active">blackScholes</a>
+    <a href="history">History</a>
+    <a href="derivations">Derivations and Usage</a>
+    <a href="calculator">Calculate Expected Option Price</a>
+    <a href="calculator2">Calculate Implied Volatility</a>
+    <a href="contact">Contact Us</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="dropDown()">☰</a>
+  </div>
   <div class="frame">
     <div id="other_main">
       <br>
       <br>
-      <h1>History of the Black Scholes Model</h1>
-      <p>You’ve probably heard before that you can’t predict the market. A wide range of people have tried and it just doesn’t work. The Black Scholes Model, in a simplified manner, works upon this assumption and assumes stocks move in a very predictable,
-        but incredibly unpredictable manner (like air molecules spreading in a room).</p>
-
-
-      <h2>Applications</h2>
-      <p>For some individuals/groups, options can be used as a form of insurance or hedging. If company XYZ’s stock drops from $30 to $20 and you own a put option with a strike price of $29, you are losing $1 per share at most. The Black Scholes Model is
-        at times used to calculate how much hedging is needed.</p>
-
-      <p>An option can also be used as a way to bet on stock price changes without owning the stock. Imagine company WXY’s stock is trading at $30. If you own a call option for $25, you can purchase this company’s stock $5 per share, creating the opportunity
-        for instant profit.</p>
-
-      <h2>Hedging</h2>
-      <p>An investment used to protect losses in another investment, usually taking the form of a counter position. Reduces potential risk/loss, and also reduces potential gain.</p>
-
-      <h2>Model Assumptions:</h2>
-      <div class="list_div"></div>
-      <ul class="list_div"><li>The Model is European (can only be exercised at expiration)</li>
-      <li>The Risk-free interest rate and volatility are known</li>
-      <li>Market is perfect and efficient</li>
-      <li>No dividends are paid out before expiration</li>
-      <li>Stock price follows normal distribution</li>
+      <h1>Contact Us</h1>
+      <p>This app was made by Meghan and Marc. </p>
+      <p>Marc's Github: MMapeke</p>
+      <p>Meghan's Github: meghanforcellati</p>
     </div>
   </div>
+  <script>
+function dropDown() {
+  var x = document.getElementById("myTopNav");
+  if (x.className === "navbar topnav") {
+    x.className += " responsive";
+  } 
+  else {
+     x.className="navbar topnav";
+  }
+  }</script>
 </body>
