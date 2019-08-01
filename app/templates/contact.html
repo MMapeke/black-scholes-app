@@ -1,36 +1,38 @@
-<head>
-  <link href="{{ url_for('static', filename='styles.css') }}" type="text/css" rel="stylesheet" />
-</head>
-
-<body>
-  <!--nav bar goes here-->
-  <div class="navbar topnav" id="myTopNav">
-    <a href="home" class="active">blackScholes</a>
-    <a href="history">History</a>
-    <a href="derivations">Derivations and Usage</a>
-    <a href="calculator">Calculate Expected Option Price</a>
-    <a href="calculator2">Calculate Implied Volatility</a>
-    <a href="contact">Contact Us</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="dropDown()">☰</a>
-  </div>
-  <div class="frame">
-    <div id="other_main">
-      <br>
-      <br>
-      <h1>Contact Us</h1>
-      <p>This app was made by Meghan and Marc. </p>
-      <p>Marc's Github: MMapeke</p>
-      <p>Meghan's Github: meghanforcellati</p>
+<html>
+  <head>
+    <link href="{{ url_for('static', filename='styles.css') }}" type="text/css" rel="stylesheet" />
+  </head>
+  
+  <body>
+    <!--nav bar goes here-->
+    <div class="navbar topnav" id="myTopNav">
+      <a href="home" class="active">blackScholes</a>
+      <a href="history">History</a>
+      <a href="derivations">Derivations and Usage</a>
+      <a href="calculator">Calculate Expected Option Price</a>
+      <a href="calculator2">Calculate Implied Volatility</a>
+      <a href="contact">Contact Us</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="dropDown()">☰</a>
     </div>
-  </div>
-  <script>
-function dropDown() {
-  var x = document.getElementById("myTopNav");
-  if (x.className === "navbar topnav") {
-    x.className += " responsive";
-  } 
-  else {
-     x.className="navbar topnav";
-  }
-  }</script>
-</body>
+    <div class="frame">
+      <div id="other_main">
+        <br>
+        <br>
+        <h1>Contact Us</h1>
+        <p>This app was made by Meghan and Marc. </p>
+        <p>Marc's Github: MMapeke</p>
+        <p>Meghan's Github: meghanforcellati</p>
+      </div>
+    </div>
+    <script>
+  function dropDown() {
+    var x = document.getElementById("myTopNav");
+    if (x.className === "navbar topnav") {
+      x.className += " responsive";
+    } 
+    else {
+       x.className="navbar topnav";
+    }
+    }</script>
+  </body>
+</html>

@@ -3,32 +3,33 @@
         <link href="{{ url_for('static', filename='styles.css') }}" type="text/css" rel="stylesheet"/>
     </head>
     <body>
-  <div class="navbar topnav" id="myTopNav">
-    <a href="home" class="active">blackScholes</a>
-    <a href="history">History</a>
-    <a href="derivations">Derivations and Usage</a>
-    <a href="calculator">Calculate Expected Option Price</a>
-    <a href="calculator2">Calculate Implied Volatility</a>
-    <a href="contact">Contact Us</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="dropDown()">☰</a>
+    <div class="navbar topnav" id="myTopNav">
+      <a href="home" class="active">blackScholes</a>
+      <a href="history">History</a>
+      <a href="derivations">Derivations and Usage</a>
+      <a href="calculator">Calculate Expected Option Price</a>
+      <a href="calculator2">Calculate Implied Volatility</a>
+      <a href="contact">Contact Us</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="dropDown()">☰</a>
+    </div>
+  
+  <div class="frame">
+  <div class="main">
+      <br>
+      <h1>Black Scholes Derivation</h1>
+      <div align="center"><iframe width="80%" height="60%" src="https://www.youtube.com/embed/NBQOeBKqiV0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <p align="center">Above, you can watch a video describing how the Black-Scholes equation can be derived. </p>
   </div>
-
-<div class="frame">
-<div class="main">
-    <br>
-    <h1>Black Scholes Derivation</h1>
-    <div align="center"><iframe width="80%" height="60%" src="https://www.youtube.com/embed/NBQOeBKqiV0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-    <p align="center">Above, you can watch a video describing how the Black-Scholes equation can be derived. </p>
-</div>
-</div>
-<script>
-function dropDown() {
-  var x = document.getElementById("myTopNav");
-  if (x.className === "navbar topnav") {
-    x.className += " responsive";
-  } 
-  else {
-     x.className="navbar topnav";
-  }
-  }</script>
-</body>
+  </div>
+  <script>
+  function dropDown() {
+    var x = document.getElementById("myTopNav");
+    if (x.className === "navbar topnav") {
+      x.className += " responsive";
+    } 
+    else {
+       x.className="navbar topnav";
+    }
+    }</script>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 import os
 from app import app
 from app.models import model
-from flask import render_template, request, redirect
+from flask import render_template, request, redirect,url_for
 import scipy.stats as st
 import math
 
